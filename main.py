@@ -22,7 +22,7 @@ moves_dict = {'A1': ' ',
 
 
 def xInput():
-    x_in = input("X player, enter a number and letter").capitalize()
+    x_in = input("X player, enter a number and letter").upper().strip()
     if x_in in moves_dict.keys() and moves_dict[x_in] == ' ':
         moves_dict[x_in] = "X"
     else:
@@ -30,7 +30,7 @@ def xInput():
 
 
 def oInput():
-    o_in = input("O player, enter a number and letter").capitalize()
+    o_in = input("O player, enter a number and letter").upper().strip()
     if o_in in moves_dict.keys() and moves_dict[o_in] == ' ':
         moves_dict[o_in] = "O"
     else:
